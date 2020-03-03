@@ -20,6 +20,14 @@ git clone julplee:useful-commands
 
 ### Git commands
 
+#### Add
+
+`git add -p` (for partial) allows to add part of a modified file. Git will display hunks of the file one by one and ask if you want to add them
+
+```bash
+git add -p
+```
+
 #### Rebase
 
 Rebase allows to integrate changes from a branch onto another. Alternatively, it's really helpful to help rewriting history
