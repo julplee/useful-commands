@@ -36,6 +36,12 @@ Rebase allows to integrate changes from a branch onto another. Alternatively, it
 git rebase -i master
 ```
 
+you can just rewrite history of the branch by doing (or of the last four commits with HEAD~4)
+
+```bash
+git rebase -i HEAD~4
+```
+
 ## Docker
 
 ### Mounting a file share
