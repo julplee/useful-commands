@@ -18,6 +18,20 @@ Use if like this to clone the repository `useful-commands` of julplee's github `
 git clone julplee:useful-commands
 ```
 
+#### Use KDIFF3 as diff tool
+
+From this [StackOverflow link](https://stackoverflow.com/questions/33308482/git-how-configure-kdiff3-as-merge-tool-and-diff-tool). You just need to execute the following commands:
+
+```bash
+git config --global merge.tool kdiff3
+git config --global mergetool.kdiff3.path "C:/Program Files/KDiff3/kdiff3.exe"
+git config --global mergetool.kdiff3.trustExitCode false
+
+git config --global diff.guitool kdiff3
+git config --global difftool.kdiff3.path "C:/Program Files/KDiff3/kdiff3.exe"
+git config --global difftool.kdiff3.trustExitCode false
+```
+
 ### Git commands
 
 #### Add
