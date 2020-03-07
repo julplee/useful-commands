@@ -56,6 +56,12 @@ you can just rewrite history of the branch by doing (or of the last four commits
 git rebase -i HEAD~4
 ```
 
+#### Diff tool
+
+```bash
+git difftool <commit1> [<commit2>]
+```
+
 ## Docker
 
 ### Mounting a file share
