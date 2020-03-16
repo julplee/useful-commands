@@ -45,6 +45,14 @@ git config --global difftool.kdiff3.trustExitCode false
 git add -p
 ```
 
+#### Blame
+
+To discover why and when a certain line was added, Git can annotate each line of a source file with the name and date it came into existence
+
+```bash
+git blame <filename>
+```
+
 #### Rebase
 
 Rebase allows to integrate changes from a branch onto another. Alternatively, it's really helpful to help rewriting history
