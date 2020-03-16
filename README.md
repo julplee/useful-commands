@@ -1,5 +1,8 @@
 # Useful commands
 
+* [Git](#git)
+* [Docker](#docker)
+
 ## Git
 
 ### Git config
