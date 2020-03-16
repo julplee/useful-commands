@@ -67,6 +67,21 @@ you can just rewrite history of the branch by doing (or of the last four commits
 git rebase -i HEAD~4
 ```
 
+#### Stash
+
+Git offers a useful feature for those times when file modifications are in an incomplete state and not yet ready for a commit.
+To temporarily return to the last commit, yet retain any uncommited changes, using stash on modified files places all uncommitted changes onto a stack.
+
+```bash
+git stash
+```
+
+When you are ready to write the stashed changes back into the working copy of the files, simply pop them back off the stack.
+
+```bash
+git stash pop
+```
+
 #### Diff tool
 
 ```bash
