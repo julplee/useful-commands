@@ -88,6 +88,24 @@ git stash pop
 git difftool <commit1> [<commit2>]
 ```
 
+#### Diff of staged files
+
+```bash
+git diff --staged
+```
+
+#### Work easily with a monorepository
+
+When you need to work on several differents things in a monorepo, let's say adding features and fixing bugs that come along you can make use of `git worktree`
+
+```bash
+git pull [my-monorepo]
+git worktree add ../devel-new-feature
+git worktree add ../fix-this-bug
+```
+
+the different worktrees are in sync with the master (the first directory pulled) so you just have to pull the master to sync the others with `git rebase master`
+
 ## Docker
 
 ### Mounting a file share
