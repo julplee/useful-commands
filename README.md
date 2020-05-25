@@ -104,7 +104,11 @@ git worktree add ../devel-new-feature
 git worktree add ../fix-this-bug
 ```
 
-the different worktrees are in sync with the master (the first directory pulled) so you just have to pull the master to sync the others with `git rebase master`
+The different worktrees are in sync with the master (the first directory pulled) so you just have to pull the master to sync the others with `git rebase master`
+
+To list all worktrees: `git worktree list`
+To delete a worktree: `git worktree prune` after deleting folder
+To create a worktree from an existing commit: `git worktree add [worktree-path-and-name] [commit-hash-or-tag]`
 
 ## Docker
 
