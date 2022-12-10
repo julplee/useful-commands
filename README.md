@@ -57,7 +57,7 @@ git log --all  --date-order --format='%ai , %an ,<%ae> ,%h , %D ,%f' >> logs.csv
 
 ### Git developer commands
 
-#### Add
+#### Add partial (or hunks)
 
 `git add -p` (for partial) allows to add part of a modified file. Git will display hunks of the file one by one and ask if you want to add them
 
