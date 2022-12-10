@@ -1,10 +1,12 @@
 # Useful commands
 
 * [Docker](#docker)
+* [FFMPEG](#ffmpeg)
 * [Git](#git)
   * [Git config](#git-config)
   * [Git audit commands](#git-audit-commands)
   * [Git developer commands](#git-developer-commands)
+* [Linux](#linux)
 * [Windows](#windows)
 
 ## Docker
@@ -16,6 +18,23 @@ For example the below command runs an Ubuntu container with a root `/code` folde
 ```bash
 docker run -v c:\dev\gitlab:/code ubuntu
 ```
+
+## FFMPEG 
+
+### Volumes adjustments
+mean_volume: -35.9 dB
+max_volume: -7.7 dB
+
+```bash
+..\ffmpeg.exe -i a.mp4 -filter:a volumedetect -f null /dev/null
+  
+..\ffmpeg.exe -i a.mp4 -preset slow -c:a aac -filter:a "volume=7dB" -c:v libx264 -maxrate 3.5M -bufsize 1.5M -profile:v main ..\video-encoded\a.mp4
+```
+
+### Guitar sound & video offset
+```bash
+ .\ffmpeg.exe -i .\Blackbird.mp4 -itsoffset 0.9 -i .\ZOOM0007_Tr1.wav -c:v copy -map 0:v:0 -map 1:a:0 new.mp4
+ ```
 
 ## Git
 
@@ -144,10 +163,17 @@ To list all worktrees: `git worktree list`
 To delete a worktree: `git worktree prune` after deleting folder
 To create a worktree from an existing commit: `git worktree add [worktree-path-and-name] [commit-hash-or-tag]`
 
+## Linux
+
+### Copy through network
+```bash
+scp julien@piblack:~/Downloads/"NAME_OF_FILE" /mnt/e/Downloads
+```
+
 ## Windows
 
 ### What triggered last PC's boot
 ```powershell
 powercfg/lastwake
-powercfg -devicequery wake_armed![image](https://user-images.githubusercontent.com/2255445/206868282-aaac6752-b2b9-40f3-8b75-44b3111fd4a6.png)
+powercfg -devicequery wake_armed
 ```
