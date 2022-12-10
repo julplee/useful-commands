@@ -42,7 +42,7 @@ git config --global difftool.kdiff3.trustExitCode false
 ```bash
 git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' 
 
-git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' | sort -k5n -k2M -k3n -k4n | grep UXP![image]
+git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' | sort -k5n -k2M -k3n -k4n | grep UXP
 ```
 
 #### List commits of one developer in all branches
