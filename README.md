@@ -1,5 +1,7 @@
 # Useful commands
 
+In this repository, you will find some commands that I got in handy and that I share with you, should you need them!  
+
 * [Docker](#docker)
 * [FFMPEG](#ffmpeg)
 * [Git](#git)
@@ -22,8 +24,9 @@ docker run -v c:\dev\gitlab:/code ubuntu
 ## FFMPEG 
 
 ### Volumes adjustments
-mean_volume: -35.9 dB
-max_volume: -7.7 dB
+Here for information, what I've used as standards:  
+mean_volume: -35.9 dB  
+max_volume: -7.7 dB  
 
 ```bash
 ..\ffmpeg.exe -i a.mp4 -filter:a volumedetect -f null /dev/null
