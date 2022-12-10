@@ -1,9 +1,9 @@
 # Useful commands
 
 * [Git](#git)
-  * [Git config](##git config)
-  * [Git audit commands](##git audit commands)
-  * [Git developer commands](###git developer commands)
+  * [Git config](#git config)
+  * [Git audit commands](#git audit commands)
+  * [Git developer commands](#git developer commands)
 * [Docker](#docker)
 
 ## Git
