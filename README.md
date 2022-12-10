@@ -35,7 +35,27 @@ git config --global difftool.kdiff3.path "C:/Program Files/KDiff3/kdiff3.exe"
 git config --global difftool.kdiff3.trustExitCode false
 ```
 
-### Git commands
+### Git audit commands
+
+#### List Remote Git Branches By Author sorted by committerdate:
+
+```bash
+git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' 
+
+git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' | sort -k5n -k2M -k3n -k4n | grep UXP![image]
+```
+
+#### List commits of one developer in all branches
+```bash
+git log --date=short --all --since=2.months.ago --author=sami@team-latech.io
+```
+
+#### Save commits of all developers in all branches in a file
+```bash
+git log --all  --date-order --format='%ai , %an ,<%ae> ,%h , %D ,%f' >> logs.csv
+```
+
+### Git developer commands
 
 #### Add
 
