@@ -83,7 +83,7 @@ git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' | 
 
 #### List commits of one developer in all branches
 ```bash
-git log --date=short --all --since=2.months.ago --author=sami@team-latech.io
+git log --date=short --all --since=2.months.ago --author=julien@tech-team.io
 ```
 
 #### Save commits of all developers in all branches in a file
