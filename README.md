@@ -1,10 +1,21 @@
 # Useful commands
 
+* [Docker](#docker)
 * [Git](#git)
   * [Git config](#git-config)
   * [Git audit commands](#git-audit-commands)
   * [Git developer commands](#git-developer-commands)
-* [Docker](#docker)
+* [Windows](#windows)
+
+## Docker
+
+### Mounting a file share
+
+For example the below command runs an Ubuntu container with a root `/code` folder pointing to the `c:\dev\gitlab` host directory
+
+```bash
+docker run -v c:\dev\gitlab:/code ubuntu
+```
 
 ## Git
 
@@ -133,12 +144,10 @@ To list all worktrees: `git worktree list`
 To delete a worktree: `git worktree prune` after deleting folder
 To create a worktree from an existing commit: `git worktree add [worktree-path-and-name] [commit-hash-or-tag]`
 
-## Docker
+## Windows
 
-### Mounting a file share
-
-For example the below command runs an Ubuntu container with a root `/code` folder pointing to the `c:\dev\gitlab` host directory
-
-```bash
-docker run -v c:\dev\gitlab:/code ubuntu
+### What triggered last PC's boot
+```powershell
+powercfg/lastwake
+powercfg -devicequery wake_armed![image](https://user-images.githubusercontent.com/2255445/206868282-aaac6752-b2b9-40f3-8b75-44b3111fd4a6.png)
 ```
